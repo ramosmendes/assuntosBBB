@@ -1,0 +1,39 @@
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  counter-increment: num-list;
+  margin: 10px;
+}
+
+li::before {
+  content: counter(num-list);
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px 8px;
+}
+
+a {
+  font-size: 30px;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+}
+
+.tabela-main {
+  margin-top: 60px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+tr,
+td {
+  text-align: center;
+  border: 1px solid black;
+}
